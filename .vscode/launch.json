@@ -1,0 +1,13 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Run C Program",
+            "type": "node-terminal",
+            "request": "launch",
+            "command": "cd ${fileDirname} && ./${fileBasenameNoExtension}",
+            "cwd": "${fileDirname}",
+            "preLaunchTask": "build with clang"
+        }
+    ]
+} 

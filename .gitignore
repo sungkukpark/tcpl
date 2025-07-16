@@ -38,6 +38,7 @@
 
 # Debug files
 *.dSYM/
+**/*.dSYM/
 *.su
 *.idb
 *.pdb
@@ -53,6 +54,176 @@ dkms.conf
 
 # debug information files
 *.dwo
+*.dSYM/
 
 # CLion files
 .idea/
+
+# Any executable without extension
+*
+!*/
+!*.*
+# Re-exclude dSYM directories after allowing all directories
+*.dSYM/
+**/*.dSYM/
+
+# ===== Operating System =====
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ===== Development Environment =====
+# Logs
+*.log
+logs/
+*.logs
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+\#*\#
+.#*
+
+# Backup files
+*.bak
+*.backup
+*.orig
+
+# ===== Editor/IDE =====
+# Vim
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+Session.vim
+Sessionx.vim
+.netrwhist
+tags
+[._]*.un~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+# Atom
+.atom/
+
+# Visual Studio Code (personal settings only)
+.vscode/extensions.json
+.history/
+.vscode/*.code-snippets
+
+# ===== C/C++ Specific =====
+# Core dumps
+core
+core.*
+vgcore.*
+
+# Coverage files
+*.gcov
+*.gcda
+*.gcno
+*.info
+coverage/
+
+# Profiling
+gmon.out
+*.prof
+
+# Valgrind
+*.memcheck
+*.helgrind
+*.drd
+*.massif
+*.cachegrind
+
+# Static analysis
+*.plist
+scan-build/
+
+# ===== Build Systems =====
+# CMake
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+Testing/
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps
+build/
+out/
+
+# Make dependency files
+*.d
+
+# Autotools
+autom4te.cache/
+config.log
+config.status
+configure
+Makefile.in
+aclocal.m4
+compile
+config.guess
+config.sub
+depcomp
+install-sh
+missing
+stamp-h1
+
+# ===== Package Managers =====
+# Conan
+conandata.yml
+conaninfo.txt
+conanbuildinfo.*
+
+# vcpkg
+vcpkg_installed/ 
