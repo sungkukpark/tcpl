@@ -53,3 +53,17 @@ dkms.conf
 
 # debug information files
 *.dwo
+
+# IDE / local settings
+.vs/
+.claude/settings.local.json
+
+# Visual Studio build output
+x64/
+x86/
+Debug/
+Release/
+*.user
+*.tlog
+*.recipe
+*.log
